@@ -1,0 +1,29 @@
+# Windows system folders (should never be tracked)
+AppData/
+Application Data/
+Local Settings/
+My Documents/
+Favorites/
+Cookies/
+NetHood/
+PrintHood/
+Recent/
+SendTo/
+Start Menu/
+Templates/
+desktop.ini
+Thumbs.db
+
+# VS Code
+.vscode/
+.vscode/extensions/
+
+# Node/npm (if used in the future)
+node_modules/
+
+# OS + IDE clutter
+.DS_Store
+*.log
+*.tmp
+*.swp
+*.bak
