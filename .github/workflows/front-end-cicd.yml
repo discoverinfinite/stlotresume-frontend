@@ -12,8 +12,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: DEBUG: Show AWS_S3_BUCKET value
-        run: echo "S3 Bucket: $AWS_S3_BUCKET"
+      - name: Show S3 Bucket Name (Debug)
+        shell: bash
+        run: |
+          echo "S3 Bucket: $AWS_S3_BUCKET"
         env:
           AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
 
