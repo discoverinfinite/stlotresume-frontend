@@ -1,4 +1,12 @@
-# Windows system folders (should never be tracked)
+# === Terraform ===
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+*.zip
+*.backup
+
+# === Windows system folders ===
 AppData/
 Application Data/
 Local Settings/
@@ -14,14 +22,14 @@ Templates/
 desktop.ini
 Thumbs.db
 
-# VS Code
+# === VS Code ===
 .vscode/
 .vscode/extensions/
 
-# Node/npm (if used in the future)
+# === Node/npm ===
 node_modules/
 
-# OS + IDE clutter
+# === OS & IDE clutter ===
 .DS_Store
 *.log
 *.tmp
