@@ -3,7 +3,7 @@ name: Deploy backend Lambda + Terraform
 on:
   push:
     paths:
-      - 'infrastruc/**'
+      - '**'
       - '.github/workflows/backend-cicd.yml'
     branches:
       - main
@@ -11,10 +11,6 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
-    defaults:
-      run:
-        working-directory: infrastruc
 
     steps:
       - name: Checkout repository
