@@ -3,7 +3,8 @@ name: Deploy backend Lambda + Terraform
 on:
   push:
     paths:
-      - '**'
+      - '**.tf'
+      - 'lambda/**'
       - '.github/workflows/backend-cicd.yml'
     branches:
       - main
